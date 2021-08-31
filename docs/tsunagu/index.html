@@ -1,0 +1,2849 @@
+<html lang="ja"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="EKJJifyR4FTkLj1B69qk3Kkc7nKbM7pb4iW6J0qo">
+
+  <meta property="og:url" content="https://tsunagu.cloud">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="全ての人が気軽に利用できるクラウドソーシング">
+  <meta property="og:description" content="仕事をしたいクリエイターと仕事を依頼したいクライアントをつなげるクラウドソーシング。クラウドソーシングを利用すれば、個人間で取引するよりも安全に発注から受注・納品まで行えます。しかし、利用するには高い手数料が必要となるため、気軽に使えないと感じる方もいらっしゃいます。つなぐは、もっと気軽にクラウドソーシングを使いたいという声に応えたサービスです。業界一の低手数料水準で利用者の負担を極限まで低減し、さらに使い易さを追及することで、誰もが気軽にストレス無く利用することが可能となっております。『笑顔につなぐサービス』の提供をモットーに、企業とタッグを組み、安心・安全なサービスを提供します。">
+  <meta property="og:site_name" content="つなぐ">
+  <meta property="og:image" content="https://tsunagu.cloud/つなぐOGP.jpg">
+
+  <meta name="description" content="クラウドソーシング「つなぐ」なら安全に手数料を気にせずスキル、知識の売買が可能になります。イラスト制作、ホームページ制作、アプリ開発、ライティングなど趣味や特技を仕事にしたい、気軽に作成を依頼したいなら、使い易い便利な機能が豊富なつなぐをご利用ください。">
+
+  <!-- title -->
+          <title>つなぐ</title>
+  
+  <!-- Scripts -->
+  <script src="https://tsunagu.cloud/js/app.js" defer=""></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://tsunagu.cloud/js/scripts.js?v=210201" defer=""></script>
+
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="icon" href="https://tsunagu.cloud/つなぐfavicon.ico">
+
+  <!-- Styles -->
+  <link href="https://tsunagu.cloud/css/app.css?v=210201" rel="stylesheet">
+  <link href="https://tsunagu.cloud/css/customize.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L18XS5FSH4"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L18XS5FSH4');
+      </script>
+      <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+</head>
+<body>
+  <div id="app">
+      <header class="p-header">
+  <!-- ヘッダーナビバー上段 -->
+  <div class="top border-bottom">
+      <div class="nav navbar navbar-expand-md navbar-light justify-content-between">
+          <h1 class="navbar-brand p-header__logo">
+              <a href="/">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.78 57.45"><g id="レイヤー_2" data-name="レイヤー 2"><g id="Top"><path class="cls-1" d="M77.58,34.45a1.9,1.9,0,0,1-.27-3.78C85.9,29.44,90.17,25.87,90,20a5.26,5.26,0,0,0-2.47-4.67A11.75,11.75,0,0,0,81.32,14c-4.83,0-11.07,1.61-17.57,4.54a1.89,1.89,0,0,1-.78.17A1.9,1.9,0,0,1,62.19,15c7.06-3.18,13.66-4.87,19.07-4.87a15.49,15.49,0,0,1,8.28,2,8.8,8.8,0,0,1,4.37,7.63c.57,10.3-10,13.78-16.06,14.65A1.23,1.23,0,0,1,77.58,34.45Z"></path><path class="cls-1" d="M139.2,30a49.22,49.22,0,0,0-7.38-3.39,45,45,0,0,0-.89-7.32,1.8,1.8,0,0,0-3.54.68,46.52,46.52,0,0,1,.78,5.64c-4.17-.79-6.62.12-8.06,1.36A6,6,0,0,0,124,37.28a7.13,7.13,0,0,0,5.79-2.47,9.12,9.12,0,0,0,1.84-4.43,48,48,0,0,1,5.87,2.78A1.8,1.8,0,1,0,139.2,30ZM127,32.51a3.48,3.48,0,0,1-3,1.17,2.19,2.19,0,0,1-2-1.56,2.13,2.13,0,0,1,.47-2.41,4.19,4.19,0,0,1,2.79-.78,13.18,13.18,0,0,1,2.87.36A6.18,6.18,0,0,1,127,32.51Z"></path><path class="cls-1" d="M170.51,37.9a2.2,2.2,0,0,1-1.58-.65l-14.2-14.67a1.74,1.74,0,0,1-.06-2.4L167.55,5.5a2.2,2.2,0,0,1,1.65-.71,2.24,2.24,0,0,1,1.29.4,1.76,1.76,0,0,1,.34,2.64L159,21.28l13.07,13.5a1.77,1.77,0,0,1-.21,2.66A2.28,2.28,0,0,1,170.51,37.9Z"></path><path class="cls-1" d="M186.71,17.22a3.08,3.08,0,1,1,3.07-3.08A3.08,3.08,0,0,1,186.71,17.22Z"></path><path class="cls-1" d="M177.42,17.22a3.08,3.08,0,1,1,3.08-3.08A3.08,3.08,0,0,1,177.42,17.22Z"></path><path class="cls-1" d="M111.61,23.64a1.4,1.4,0,0,1-.28-.06,1.8,1.8,0,0,1-1.22-2.24L115.3,3.62a1.81,1.81,0,1,1,3.47,1l-5.19,17.72A1.8,1.8,0,0,1,111.61,23.64Z"></path><path class="cls-1" d="M124.26,13.72h-18.2a1.66,1.66,0,1,1,0-3.31h18.2a1.66,1.66,0,0,1,0,3.31Z"></path><path class="cls-2" d="M143.49,20.47c-2.37,1.67-6.25.12-8.83-3.54s-2.74-7.84-.37-9.51l1.36,1.93c-1.09.77-1,3.51.94,6.22s4.45,3.73,5.54,3Z"></path><path class="cls-2" d="M134.29,7.42c2.37-1.68,6.25-.12,8.83,3.54s2.75,7.83.37,9.51l-1.36-1.94c1.09-.76,1-3.5-.94-6.21s-4.45-3.74-5.54-3Z"></path><path class="cls-1" d="M23.88,0A23.9,23.9,0,0,0,3.42,11.54H16.75a12.94,12.94,0,0,1,10.91,6,10.11,10.11,0,0,0-4.57,1.8h0a8.14,8.14,0,0,0-6.33-3H1.23A23.63,23.63,0,0,0,0,23.88,23.88,23.88,0,1,0,23.88,0ZM16.75,37.41H9.05a2.39,2.39,0,1,1,0-4.77h7.7a8.16,8.16,0,0,0,4.35-1.25,8.35,8.35,0,0,0,3.07-3.51,8.08,8.08,0,0,0,.74-3.4,8.5,8.5,0,0,0-.08-1.14,5.87,5.87,0,0,1,4.52-1.76,12.58,12.58,0,0,1,.33,2.9A12.94,12.94,0,0,1,16.75,37.41Z"></path><path class="cls-2" d="M24.17,27.88a8.35,8.35,0,0,1-3.07,3.51c-.1-.2-.19-.4-.28-.6-1.5-3.42-1.42-6.73.25-9.3l3.47,2.24A5.06,5.06,0,0,0,24.17,27.88Z"></path><path class="cls-2" d="M47,38.19c-1.58,2.44-4.33,3.87-7.8,4l-.58,0h-.14A19.45,19.45,0,0,1,28.11,39a21.32,21.32,0,0,1-4.3-3.66,12.79,12.79,0,0,0,3-2.78,17.3,17.3,0,0,0,3.51,3,15.23,15.23,0,0,0,8.17,2.62c1.33,0,3.75-.31,4.94-2.16l.73.47Z"></path><path class="cls-3" d="M29.35,21.58a5.87,5.87,0,0,0-4.52,1.76,8.18,8.18,0,0,0-1.74-4,10.11,10.11,0,0,1,4.57-1.8A12.68,12.68,0,0,1,29.35,21.58Z"></path><path class="cls-2" d="M48.27,33.59A8.38,8.38,0,0,1,47,38.19L44.2,36.42,43.47,36c2-3.06-.69-8.45-5.82-11.76a15.51,15.51,0,0,0-8.11-2.62h-.19a5.87,5.87,0,0,0-4.52,1.76,4,4,0,0,0-.29.39l-3.47-2.24a8.08,8.08,0,0,1,2-2.15h0a10.11,10.11,0,0,1,4.57-1.8A18.38,18.38,0,0,1,39.9,20.71a19.25,19.25,0,0,1,7.32,8.21A11.61,11.61,0,0,1,48.27,33.59Z"></path><path class="cls-2" d="M147,57.45a4.21,4.21,0,0,1-3.6-2.43,5.35,5.35,0,0,1-.55-3.36A3.84,3.84,0,0,1,144.55,49a3.06,3.06,0,0,1,1.45-.49.78.78,0,0,1,.8.77.81.81,0,0,1-.7.88,1.63,1.63,0,0,0-.8.27,2.19,2.19,0,0,0-.94,1.54,3.48,3.48,0,0,0,.37,2.22c.74,1.41,2.19,2,3.24,1.34a.71.71,0,0,1,1,.31.87.87,0,0,1-.27,1.12,3.06,3.06,0,0,1-1.68.49"></path><path class="cls-1" d="M113.61,51.85c-2-.05-3.06-1.08-3.06-2.92V45.49a.75.75,0,1,1,1.5,0v3.44c0,.86.26,1.39,1.57,1.42h.13c1.3,0,1.56-.56,1.56-1.42V45.49a.75.75,0,0,1,1.5,0v3.44c0,1.84-1.08,2.87-3,2.92Z"></path><path class="cls-1" d="M156.18,51.85c-2-.05-3.06-1.08-3.06-2.92V45.49a.76.76,0,0,1,.75-.75.75.75,0,0,1,.74.75v3.44c0,.86.27,1.39,1.58,1.42h.13c1.3,0,1.56-.56,1.56-1.42V45.49a.75.75,0,0,1,1.5,0v3.44c0,1.84-1.08,2.87-3,2.92Z"></path><path class="cls-1" d="M126.5,51.64a.74.74,0,0,1-.74-.75V47.45c0-.85-.27-1.39-1.58-1.42h-.13c-1.3,0-1.56.57-1.56,1.42v3.44a.75.75,0,0,1-.75.75.74.74,0,0,1-.74-.75V47.45c0-1.84,1.08-2.87,3-2.91h.16c2,0,3,1.07,3,2.91v3.44a.74.74,0,0,1-.75.75"></path><path class="cls-1" d="M94.84,46.22H91.12a.75.75,0,0,1,0-1.5h3.72a.75.75,0,0,1,0,1.5"></path><path class="cls-1" d="M94,51.8a2.23,2.23,0,0,1-1.4-.43,1.78,1.78,0,0,1-.64-1.46V43.66a.75.75,0,1,1,1.49,0v6.25a.39.39,0,0,0,.09.29c.12.1.5.16,1.17,0A.75.75,0,1,1,95,51.67a5.18,5.18,0,0,1-1,.13"></path><path class="cls-1" d="M145.85,51.89a3.69,3.69,0,1,1,3.69-3.69,3.69,3.69,0,0,1-3.69,3.69m0-6a2.37,2.37,0,1,0,2.2,2.36,2.29,2.29,0,0,0-2.2-2.36"></path><path class="cls-2" d="M148.34,57.07a.73.73,0,0,1-.64-.41.87.87,0,0,1,.27-1.13,2.22,2.22,0,0,0,.94-1.54,3.55,3.55,0,0,0-.37-2.22,2.69,2.69,0,0,0-2.44-1.61.77.77,0,0,1-.79-.77.8.8,0,0,1,.69-.88,4.15,4.15,0,0,1,3.83,2.43,5.32,5.32,0,0,1,.55,3.35A3.84,3.84,0,0,1,148.72,57a.67.67,0,0,1-.38.11"></path><path class="cls-1" d="M134.16,51.86a3.32,3.32,0,0,1-3.36-3.52,3.89,3.89,0,0,1,1.14-2.56,3.63,3.63,0,0,1,5.11-.17,3.35,3.35,0,0,1,1,2.55,3.85,3.85,0,0,1-1.14,2.55h0a3.89,3.89,0,0,1-2.56,1.14h-.16m.5-5.73a2.37,2.37,0,0,0-1.66.71,2.4,2.4,0,0,0-.71,1.56,1.86,1.86,0,0,0,2,2,2.44,2.44,0,0,0,2.28-2.28,1.9,1.9,0,0,0-.54-1.43,1.83,1.83,0,0,0-1.33-.53"></path><path class="cls-1" d="M138.46,51.74a.69.69,0,0,1-.5-.2l-1.45-1.33a.75.75,0,0,1,1-1.1L139,50.45a.74.74,0,0,1,0,1,.72.72,0,0,1-.55.24"></path><path class="cls-1" d="M147.67,46.11a.87.87,0,0,1-.31-.07.75.75,0,0,1-.37-1l.81-1.79a.75.75,0,0,1,1.36.61l-.81,1.79a.74.74,0,0,1-.68.45"></path><path class="cls-1" d="M103.18,51.69c2.06,0,3-1.16,3-2.25a1.93,1.93,0,0,0-1.41-1.79,8.8,8.8,0,0,0-1.41-.35,6.62,6.62,0,0,1-1-.25c-.38-.13-.54-.39-.51-.63s.6-.51,1.2-.51a4.59,4.59,0,0,1,2,.58.7.7,0,0,0,.82-.32.66.66,0,0,0-.1-.75,3.42,3.42,0,0,0-2.45-.87h-.11c-1.62,0-2.8.86-2.8,2.05a1.81,1.81,0,0,0,1.36,1.69,9.29,9.29,0,0,0,1.21.29,5.76,5.76,0,0,1,1.32.35.64.64,0,0,1,.45.56c0,.42-.49.83-1.44.83h-.06a2.42,2.42,0,0,1-1.79-.77.74.74,0,0,0-1,.12.75.75,0,0,0,0,.89,3.51,3.51,0,0,0,2.78,1.13Z"></path></g></g></svg>                </a>
+          </h1>
+          <nav class="d-flex d-md-block" id="">
+              <ul class="navbar-nav mr-1 mr-md-0">
+                                                          <li class="mr-1 mr-md-3">
+                          <a class="c-button c-button--small c-button--deco c-button--primary" href="https://tsunagu.cloud/login">ログイン</a>
+                      </li>
+                                                              <li class="">
+                          <a class="c-button c-button--small c-button--deco" href="https://tsunagu.cloud/register">アカウント作成</a>
+                      </li>
+                                                  </ul>
+              <button class="navbar-toggler p-header__menu" type="button"></button>
+          </nav>
+      </div>
+  </div>
+  <!-- /ヘッダーナビバー上段 -->
+  <!-- ヘッダーナビバー下段 -->
+  <div class="bottom border-bottom p-header__nav">
+      <div>
+          <nav class="nav navbar navbar-expand-md navbar-light">
+                              <ul class="navbar-nav left">
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/job_requests/create">仕事依頼をする</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/products/create">商品を出品する</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/blogs/create">ブログを投稿する</a>
+                  </li> -->
+              </ul>
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/job_requests">仕事依頼検索</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/products">商品検索</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/blogs">ブログを探す</a>
+                  </li> -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/users">ユーザー検索</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://tsunagu.cloud/portfolios">ポートフォリオ検索</a>
+                  </li>
+              </ul>
+                          </nav>
+      </div>
+  </div>
+  <!-- /ヘッダーナビバー下段 -->
+  <div class="p-header__overlay"></div>
+</header>
+      <main class="">
+                                  <div class="bg-primary p-home__top js-head">
+  <div class="container">
+      <img class="img-fluid img_01" src="https://tsunagu.cloud/img/illust/p_01.svg">
+      <img class="img-fluid img_02" src="https://tsunagu.cloud/img/illust/p_02.svg">
+      <img class="img-fluid img_03" src="https://tsunagu.cloud/img/illust/p_03.svg">
+      <img class="img-fluid img_04" src="https://tsunagu.cloud/img/illust/p_04.svg">
+  </div>
+</div>
+
+<div class="p-section p-home__category" id="category">
+  <div class="container">
+      <div class="title mb-4">
+          <h2 class="mb-0">
+              <img class="" src="https://tsunagu.cloud/img/common/title_category.svg" alt="人気カテゴリー">
+          </h2>
+          
+      </div>
+      <div class="row justify-content-center">
+                      <span class="col-4 col-sm-4 col-md-2 icon mb-3">
+              <div>
+                  
+                  <a href="https://tsunagu.cloud/products/search?category_id=2&amp;sort=2">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/icon/category_2.svg" alt="イラスト制作">
+                  </a>
+                  <h5 class="">
+                                                  イラスト制作
+                                          </h5>
+              </div>
+          </span>
+                      <span class="col-4 col-sm-4 col-md-2 icon mb-3">
+              <div>
+                  
+                  <a href="https://tsunagu.cloud/products/search?category_id=3&amp;sort=2">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/icon/category_3.svg" alt="記事・ライティング">
+                  </a>
+                  <h5 class="">
+                                                  記事・ライティング
+                                          </h5>
+              </div>
+          </span>
+                      <span class="col-4 col-sm-4 col-md-2 icon mb-3">
+              <div>
+                  
+                  <a href="https://tsunagu.cloud/products/search?category_id=1&amp;sort=2">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/icon/category_1.svg" alt="デザイン制作">
+                  </a>
+                  <h5 class="">
+                                                  デザイン制作
+                                          </h5>
+              </div>
+          </span>
+                      <span class="col-4 col-sm-4 col-md-2 icon mb-3">
+              <div>
+                  
+                  <a href="https://tsunagu.cloud/products/search?category_id=13&amp;sort=2">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/icon/category_13.svg" alt="音声・ナレーション">
+                  </a>
+                  <h5 class="">
+                                                  音声・ナレーション
+                                          </h5>
+              </div>
+          </span>
+                      <span class="col-4 col-sm-4 col-md-2 icon mb-3">
+              <div>
+                  
+                  <a href="https://tsunagu.cloud/products/search?category_id=4&amp;sort=2">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/icon/category_4.svg" alt="画像・映像・動画編集">
+                  </a>
+                  <h5 class="">
+                                                  画像・動画編集
+                                          </h5>
+              </div>
+          </span>
+                      <span class="col-4 col-sm-4 col-md-2 icon mb-3">
+              <div>
+                  
+                  <a href="https://tsunagu.cloud/products/search?category_id=5&amp;sort=2">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/icon/category_5.svg" alt="Webサイト制作">
+                  </a>
+                  <h5 class="">
+                                                  Webサイト制作
+                                          </h5>
+              </div>
+          </span>
+                  </div>
+      
+                  <div class="mb-5">
+              <div class="row justify-content-center">
+  
+  <h4 class="m-4 text-center font-weight-bold">
+      【イラスト制作】
+  </h4>
+</div>
+<div class="row d-flex flex-nowrap overflow-auto">
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/435"></a>
+  <div>
+                  
+          <div id="carouselExampleControls435" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/enAwa4eS1MYWBQoXaWEoUi0RB3YSVI7MFQ9MjsAapF7YsT63oa.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/4irbx9Fz9d2ZjKTWzjkU2X4Iy3kXjGATmDUcAjJXxRYSk4e7aa.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/qPi0VpipNZ1iOODFbkenTryjxJ2kEBSyuM3Gp1Jw8Lnpkw5KVS.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/kePyKGxQDQVRixNXzs6ks8dG9pJzP3WHAlLxiPyOxjo1bFlkLm.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/npaCB48FzCVx9BEO9nN0BRJYH0x5a0nHBBfhsRcseDJ6PrmDpd.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/qBZvNtzGmb9m6vNCsIvtjz7n7sfCLD0kzWQ10ZIp90vhTB5FeP.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/WtVB2LvllEPJqGopI0w9gX2YXvWJBoLG5SU0VoMLDXyRUcQCAF.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/cjPGMBsVj4NsuhZqbS0qCezZub4eV10o6VYQHyBgiGEfUOnQw9.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/2dbsaNdsHinuImPwwdBbgLLy7SPDmu3CJDKC7y4ATi8wQbzKgZ.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls435" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls435" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">用途に合わせたイラスト制作</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">イラスト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">一枚絵、立ち絵、グッズイラスト、アイコン、ヘッダー、書籍の表...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">4000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>3件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(3)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/Sq0hAmNapMDOkBOsuaaJng0vlS5xbazXLuY2F1DJ96aJjtLzz1.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="col text-left pl-0 pt-1 small mb-2">
+                              <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/tk28rk">
+                                  高崎りく
+                              </a>
+                              <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/tk28rk">
+                                  高崎りく
+                              </a>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/20"></a>
+  <div>
+                  
+          <div id="carouselExampleControls20" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/LCBh3u2tYX0ZGsM5Gr94aRnevgUcD4jKWgVk0tJDJlY9IYPC6h.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/NGS5HP2diYA1xoYKm8cVnRgaI5repvAuVuA5xLMP9dqQGh4eqy.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/XmEt2twvoBvB8awCVm25pBVlFj8Dj6ynGgrbKbDdkCe4tyFRK6.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/jEEAIbAonfXso1rnZAti2pqOVhhCPIF9uLNQy1dAi9avLsN3lf.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/waLx4UIC3EppNd1pWaI2fcffMCp6GxtU3s7PpblEOjecwsF7KR.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/pvlcAjVti6c69wWzXKnG0b8IA0Dv2N5kU2HKnLlMMId5kfCIXg.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/iSOWbfMKHht1NjrtF12tp37muRVDd0F2sbKtcGLwWcVJpgx8Vr.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/DWrhec5OvIJhMphrmI1WhBODNqdagceFU7gKEaoZ0J95kfhuwN.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/vksQgWltKu6nqAX1EGbmO0O9PqYGhsswpGAmbFnD7H9i4ORPjG.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/ZH868OEuTm0nEPHLL3eChkVrctngjUWheOGWjwguBSK94ga5Fe.png">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls20" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls20" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">【先着5名限定割引中】アイコン・一枚絵描きます</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">イラスト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">つなぐオープンを記念して、先着5名様限定で値下げしております...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">2000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/vY6HfJDO2aPNbMFnpWDUkfV7Xddz4KaRh04IbFj775P6Q54H0E.png">
+                                                          </div>
+                      </div>
+                                                  <div class="col text-left pl-0 pt-1 small mb-2">
+                              <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/yukinomayo">
+                                  雪乃麻代
+                              </a>
+                              <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/yukinomayo">
+                                  雪乃麻代
+                              </a>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/317"></a>
+  <div>
+                  
+          <div id="carouselExampleControls317" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/hHjw41KiuQPohIqY8Q79hZeM7A70wzLoxGLhyzBsc1XJfOgf8K.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/3YTIIlbQiBHbOs4PQImfxbd5XfdXXwvAmCNHz2YPeXhdLkykYr.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/k3IvwQrqhbI6R1lAG6Cy3metZu1frHI9Nx2OyIVEAPR7vr5Xwq.png">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls317" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls317" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">キャラクターイラストの制作</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">イラスト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">　
+
+❑ 概要
+
+TRPGセッションや、ゲーム実況を...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">5000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>3件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(2)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/zkP9RyHSpAEcYSvcyipGZJOsobv2GZhAZAghGkPppjeT5LpFvg.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/Mi_8ch">
+                                          やち みそ
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/Mi_8ch">
+                                          やち みそ
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/8chMi" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/448"></a>
+  <div>
+                  
+          <div id="carouselExampleControls448" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/A9fbBOkidoUluCgBcRVBIYl1RrnLq2QjFE8OUWEv0V5OeRX3q7.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/bSZzN5J6J7riTvJu5kWCCxgS1mU6Yx7tojEKCBGlRRuqsZ20Xt.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/otCnZkWGuZQ5NFoiDZXiyQLQTxCbfftRpLZIPEK4wxWrdg1G0n.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/5ja94niR3ndfE66tYiCoLkQzwuiAy3OI17Nl2QjhTQBr08FYJq.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/BiT0byqrtzNW28BMnwfosafqpaZ0W6QEic9dwtiJfYDWrLYwUR.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Jqvxy82ql3FqMfNKCrp8WJ12Wt0B45qmhV9KqE3HeuhujScZvT.png">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls448" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls448" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">【商用利用可】配信や実況で使えるちびキャライラスト</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">イラスト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">ご覧いただきありがとうございます。
+
+配信、ゲーム実況、...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">7500円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                                  <span class="badge badge-warning">休止中</span>
+                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/YZTU1Td4OuyTZlg2ibkYzzF4WYIve8uKWFpuu0iP1pactIguqy.png">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/sanada37">
+                                          さなだ
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/sanada37">
+                                          さなだ
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/sanada_illust_2" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+  </div>
+
+<div class="text-center">
+  <a href="https://tsunagu.cloud/products/search?category_id=2&amp;sort=2">
+                  Webサイト制作
+              の閲覧数の多い商品をもっと見る
+  </a>
+</div>            </div>
+                  <div class="mb-5">
+              <div class="row justify-content-center">
+  
+  <h4 class="m-4 text-center font-weight-bold">
+      【記事・ライティング】
+  </h4>
+</div>
+<div class="row d-flex flex-nowrap overflow-auto">
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/355"></a>
+  <div>
+                  
+          <div id="carouselExampleControls355" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/jKonvONBQcKie2GKT0m2sygpkTDucO1S9JfVPifBrvy5dfyNeF.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/3ZqYOnOS5UHOllWvSBhjzebGc48fDKOPc1Bda2Vvj3jfxHZKpj.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls355" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls355" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">シナリオ、小説、各種プロット書きます！</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">記事・ライティング</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">初めまして、沢山ある出品者様の中から当ページをご覧頂きありが...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>1件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(1)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/iD968OsdSejAExaSWR20N6mtumkwWcP8DNU8wmZvz6ISi0lyk1.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="col text-left pl-0 pt-1 small mb-2">
+                              <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/kaya0410">
+                                  友平かや
+                              </a>
+                              <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/kaya0410">
+                                  友平かや
+                              </a>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/212"></a>
+  <div>
+                  
+          <div id="carouselExampleControls212" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/EJJfFaus2BQ7rSm36YyxK6OrTaLUK0xYsJ5rBmlRXB77O7Ttd6.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/WXuEcVBFK7hD3Kiaf5oMgaylAqkikYwhpmK8l5AxFIGzB2qs87.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls212" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls212" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">【1文字1.5円】1記事から対応いたします！</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">記事・ライティング</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">ご覧いただきありがとうございます。
+WEBライター2年目の...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">3000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/4kBJnWQ9zkkTgLDP0m8dLMxGdolZ9akunwprZtUE6CDzVgKs7z.png">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/Aimi127">
+                                          Aimi
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/Aimi127">
+                                          Aimi
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/Ayumi01779451" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/712"></a>
+  <div>
+                  
+          <div id="carouselExampleControls712" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/RpVPsVfKA2tvPIlFy0LiCQZpw6TVJ0eRtAELEL2eDawJ4vM3jh.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/v1kHrhzMvZLBq8ohAwf2mdEyLRkKfGZU7ce1fVaFlbjuQk48md.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/cLdO1B1RZs0F3xu7iY6qRIMXJ6OofTMnnbEl0NtnP6OGT1DOgQ.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Vts4b9Gffadjij9QgPinX0dzl9Qec4CtGWTj5la62Q2WZU14Y7.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/r90fUbxGtPwgly15MeqGedp0gO5WmAcKMdYzX7fcM5e9CQKRXy.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls712" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls712" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">【20-40秒台本】あなたの為のボイサン書きます</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">記事・ライティング</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">声の活動を続けるならボイスサンプルの見直し・更新を忘れずに。...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1100円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/uzfmPYn8JELU5pY3FXyGQWOjc3gsfpxP4oXRYStwcazT3T3YrI.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/ch80">
+                                          あずま八重
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/ch80">
+                                          あずま八重
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/toumori80" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/64"></a>
+  <div>
+                  
+          <div id="carouselExampleControls64" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/L33UpC471WH8C9SbwZ1ENnsVOeGuvFDgojpFbki1V9fdif84cX.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Z6HiOuBrjafaeqjvZk70izFteYQYhm2O00A0AVvlkQpqFxHBvm.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/oYbEMKqZ2V0ygI2jJGLaVlg1R00YJhNcuWt20BAoMVFMR6c6Dp.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/v8A4XsFRxoCmx5Wxo9gN8w3ic2dHgpTMvPPhHH0OTOXg2jppIs.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/ZsXV0BUiyqAoAm1Bj3HKRBGHepHvAMYnPm17DJX0JXtq32aPpt.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls64" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls64" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">SEOに強く読みやすいブログ・記事を執筆します</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">記事・ライティング</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">はじめまして！
+ご覧頂き、誠にありがとうございます。
+お...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">3000円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>3件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(3)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/hr1IRMRUTygnP5cAzgtKl3tWNGkv2e8N6SqzVu74f6q3jBkaEG.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="col text-left pl-0 pt-1 small mb-2">
+                              <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/ooshimahana">
+                                  おおしまはな
+                              </a>
+                              <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/ooshimahana">
+                                  おおしまはな
+                              </a>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+  </div>
+
+<div class="text-center">
+  <a href="https://tsunagu.cloud/products/search?category_id=3&amp;sort=2">
+                  Webサイト制作
+              の閲覧数の多い商品をもっと見る
+  </a>
+</div>            </div>
+                  <div class="mb-5">
+              <div class="row justify-content-center">
+  
+  <h4 class="m-4 text-center font-weight-bold">
+      【デザイン制作】
+  </h4>
+</div>
+<div class="row d-flex flex-nowrap overflow-auto">
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/69"></a>
+  <div>
+                  
+          <div id="carouselExampleControls69" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/El17ACsA6z2iHY3qfEVapYtSPoylrOCgDkT7Drzunz5hcpolHN.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/FQxrK12Ll3nGIZ6EUdA1DHFmv3iP65rUOHYgK4ZLThvfOfdoQt.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/nkWwLbwdq49mYvpyXzArO6ByFn2Cclf03a3H5d3OhxOe2TbZd0.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/2qYoUxAqyfxVksHDiPYIfzW76H52Otu1aC8ZL7mIJiJ0BiYtPI.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/VelY01wtxRePvNr00tANzMmwoW6YDl0FrEZwJLRBJ4syz94VV2.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/HUDeeUudLkCypRHpvpglUULRkmkDZSxr4OF7I9IQYdcxVGpLan.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/7u0ZQXkdUc038tkRXEK0pPM2HQNObVU6uP9amMdy5hKiDSlnhJ.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/aG3dQN724M6QRP2hGCUMFhcZdVbHy88aN98vaeh2hNepqoN07x.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/mH9dK4uh1kkIv6EsskFSbppYhtGvOzyGHNwjUGeoHBTmxbb6uW.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/jZeVxKKAS2EkawCnFXqd43ZwdAghPybBMCJBvlrlmjLQDYOv6N.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls69" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls69" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">ロゴ制作で迷ったら！サマになるロゴお作りします！</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">デザイン制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">✅先着5名様！限定で60%OFFの20,000円で高品質・高...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">20000円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>5件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(5)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/xxGE8JsMXvWoASHY8Bbfh4TdtIOSAmRguRcFwfNfdyLtgSEyIc.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/tokunaga_design">
+                                          トクナガデザインオフ...
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/tokunaga_design">
+                                          トクナガデザインオフィス｜ロゴ専門デザイ...
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/tokunaga_design" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                  <a href="https://www.instagram.com/tokunaga_design" class="small align-top"><i class="fa fa-instagram mr-2 text-secondary"></i></a>
+                                                                                                      </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/8"></a>
+  <div>
+                  
+          <div id="carouselExampleControls8" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/39zuUKzrYgmphpZ44O6pbsKrGyTD8qUAE2uQlWXJnh34hGDgVK.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/DnsvBigfKzB9zY7F6NZfXRSkPfMQcmJ8NUG6vP6LOKEvHAT8Pv.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/b5a9D185K5mzsietiGaq1yQyMCqwGNKrqWCKaOap2DgKmdk5Gj.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/TEogtR7uFVsl1jKfh9CcHKanW3goRZWawoEfE0lF20GfzQcwrI.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/l2MHF0pko44fBownvgN4cKJmllb7ZS8pWAtVxpqG1Z7gOIs6WG.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/eKsRgAQOPiybh2ub2XqHKkl7JolGHJulUWgZQgIAmx7tNbH2Xw.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/ASTk55xrvUPI7YWNh1v63aLYVQf52Ww7tICmiSDDTsUnumZDO7.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/aiyaQPb76GeSRhwkYH93fPkRSEcMQ8ndBDUd8u029PVtJ0VyBe.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/NiNHFNYzcNqJCbDVGJIiNTQoRfie1NwGmQksh9wdPIvfDXDhNY.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/gzmRLhUoZWkrC9jyUy0qQX4MNvbn5nRTeYj1I1ZXc9MUwunMrp.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls8" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls8" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">大手企業ロゴを多数手掛けた男女2名でロゴをデザインします‼️</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">デザイン制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">🔹つなぐOPEN特別超価格🔹
+この度は数あるサービスの中か...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">25000円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>3件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(2)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/3zl4Wdt1R2biPi7y37kaYAa9UFvyUgGonELg3L4wckgia8WCi0.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/mavshine">
+                                          mavshine |...
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/mavshine">
+                                          mavshine | まぶしゃいん
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/mavshine1" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                  <a href="https://www.instagram.com/mavshine_logopic/" class="small align-top"><i class="fa fa-instagram mr-2 text-secondary"></i></a>
+                                                                                                              <a href="https://www.facebook.com/mavshine" class="small align-top"><i class="fa fa-facebook mr-2 text-secondary"></i></a>
+                                                                  </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/481"></a>
+  <div>
+                  
+          <div id="carouselExampleControls481" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/uIv90fsQRFKcfiOaZqvo4RWwwgQeniJdpZb6CTiO2AQRp7DU0W.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/tp8l9rHccclD6dF4oq75TLEaRZtFbKljkNJ33NhgtAMJRRYPw0.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/ObgWJAJw709AXeIfkm2OSpYns7KNXyjQoLxb1UhMOwIZm644s4.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/oyXd8COqsZWreBPOcG5fyqD9GNU0a7vO1hx0AILpGBqI3FO0vG.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/082gsq1R4zGOMwaoAnkG77RFoCEIU13WdFnY1WDBneXZ0BvoFM.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/f2qUuYYUBPWcNCVjkWKzFyeZIY0wHXkAAkRRCVKJ4V0gSBnWAY.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/VftfVU6nd3C3ApMnNHSPN95D4mx1hN9Y7Uwtf02XGbA1BKGLWr.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/wEQZEB2MPChC7noueqWfw8irWtnJ0nzhUF6atk6rtoPFX8luF5.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls481" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls481" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">オープン記念！先着10名様まで衝撃価格でロゴ販売します！</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">デザイン制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">当サービスでは【ロゴ販売】をさせて頂きます。
+作成済みのロ...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1000円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>4件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(4)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/vrBGEkR7FsqrFNuM2R1a0yTlMmj1sK1D2WXBsVva44DtX73ARs.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/poppper">
+                                          poppper
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/poppper">
+                                          poppper
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/poppper114" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                  <a href="https://www.instagram.com/poppper114/" class="small align-top"><i class="fa fa-instagram mr-2 text-secondary"></i></a>
+                                                                                                      </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/23"></a>
+  <div>
+                  
+          <div id="carouselExampleControls23" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/wFWpM1ARtLLzp33vDJw1hhSMIiv4rezatjcOCv7P8cnFPJV2Uj.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/p7MtCP2fDKu61xh0TBngHDa44iEFFpft9hJO0R3ct9IardCWIM.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/VavJPlIFeibeTxz9z8iJGynRb6bJAZsgvY2KkJ4TLlVz2lUR7W.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Tl1u9WixMkmqIu7nIGs0ed7bu9j6DNL9BemmmixxPjzh3BbWDX.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/zIgzWUA6a4lEYLSuRAIMBNJT5cWtjoSlYebFTVac3QoZWcwmQB.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/ShhQHPD4xf9dlaZq66yLbSLVFIFU62jakWHcAhYn6dSIAiCAaQ.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/JPrvgQbmARbJ8I0n6AdpvAuNraOdIs2EeC98hhGs0jlj6agmSk.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/UCArH0dGxSJbWfV4daA7nX0tL8Rk4kQ5xNMiKgWVTTBXvJcxZJ.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls23" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls23" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">デザイナーがシンプル＋遊び心のあるロゴをつくります</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">デザイン制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">初めまして.blue(ドットブルー)のシミズユウタです。
+...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">20000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>1件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">4</p>
+                  <p class="mb-0">(1)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/l1aYgcXzJenLiNucbH5oIdvZ3x2Ck8zTBoLozwkIhNaJPdxm93.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/yuta__shimizu_">
+                                          シミズユウタ　
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/yuta__shimizu_">
+                                          シミズユウタ　
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/yuta__shimizu_" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                  <a href="https://instagram.com/yuta__shimizu_" class="small align-top"><i class="fa fa-instagram mr-2 text-secondary"></i></a>
+                                                                                                      </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+  </div>
+
+<div class="text-center">
+  <a href="https://tsunagu.cloud/products/search?category_id=1&amp;sort=2">
+                  Webサイト制作
+              の閲覧数の多い商品をもっと見る
+  </a>
+</div>            </div>
+                  <div class="mb-5">
+              <div class="row justify-content-center">
+  
+  <h4 class="m-4 text-center font-weight-bold">
+      【音声・ナレーション】
+  </h4>
+</div>
+<div class="row d-flex flex-nowrap overflow-auto">
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/283"></a>
+  <div>
+                  
+          <div id="carouselExampleControls283" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item active image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/FlvKzeNGsgqw6zBBDx5homBAFF7G8RghzNEYxtQ2toQnpMvp8G.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls283" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls283" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">声色10種以上！ニーズに合わせ各種音声収録承ります！</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">音声・ナレーション</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">声色は10種類以上！兼役なども可能です！
+ゲーム/アプリC...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>5件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(3)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/IC532utjHbsybMmnDYa4cXXoNz24HGIWXqstYNKMaeCAZ0sjpK.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/sc_nayu">
+                                          ナユキユズ
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/sc_nayu">
+                                          ナユキユズ
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/sc_nayu" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                              <a href="https://www.youtube.com/c/YuzuNayuki/videos" class="small align-top"><i class="fa fa-youtube mr-2 text-secondary"></i></a>
+                                                                                                                                          </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/203"></a>
+  <div>
+                  
+          <div id="carouselExampleControls203" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item active image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/UuFJyCdDjCFXAFQSg6YjateofMeEEXDEUEAN2BgeYSF3RCbw9L.png">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls203" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls203" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">澄んだ聴き心地の良い声・七色の声をお届けします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">音声・ナレーション</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">【実績400件以上】
+TVCMナレ・ゲームソフトやアプリC...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">2000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>1件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(1)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/hpmLceE1RbHJSDrf064ANezKBMPa1Kd5uhDAYPK2vGoKFODiDy.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/hazumiai">
+                                          羽澄愛
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/hazumiai">
+                                          羽澄愛
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/hazumi_ai" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                              <a href="https://www.youtube.com/channel/UCeTZBxfEAxaptiyzMFsYhqA" class="small align-top"><i class="fa fa-youtube mr-2 text-secondary"></i></a>
+                                                                                                                                          </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/860"></a>
+  <div>
+                  
+          <div id="carouselExampleControls860" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/rNBt06PikXhIDTzzowB7bDN87RQU05UHXKi4OCXkw7hK7SQDIn.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/CTvyZiE4Mvyt2mxcFNuOtRWgr8Ztb4OLQ0sSC3DXfonoBKHYVl.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/oVyCuaUjkz5BJ0d2JUnGEW9KYUl6SrmX8OSLW7GDF1lm3RZ5XE.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls860" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls860" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">🎙宅録音源を聞いてコメントします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">音声・ナレーション</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">貴方の収録した宅録音声を聞いて、音のプロがコメントします。
+...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">2000円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>5件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star mr-1"></i>
+                                      <p class="mb-0 mr-1">5</p>
+                  <p class="mb-0">(5)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/Q6lvjsh2EiGkujzmXjJG1m3F0z4IVt0pqITQ5AkiFYsK9GshtN.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/toruemu">
+                                          橋爪徹
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/toruemu">
+                                          橋爪徹
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/toruemu" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/208"></a>
+  <div>
+                  
+          <div id="carouselExampleControls208" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/0Sm5dQUndq9vM7CDJDJsAz2biG3uOcbXwVEn5Zhli9UrrGRX3t.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/8YYgXQVvlaDYtBUUKZLlybN8HyFRvp1y2KpSdk0wjEpOt6nFJH.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/XdLKkvvmPRCeW07LUnoyphxGN4ddqHZnwbc6OHHG6PuqYA662K.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/de3riv4aOP1lEZc35383JO2ZtLm3eUadjkCf7f7mlz3dXDUEO2.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/hKzGt9vcn97pLhVRwO5Qt4nqNYK7W9NRnvp2HmEuAx8tXCeccH.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/TG2Bbo51DvV8BLZjXPzeqDWg2eo0eMwZME2a59oKt5G70mKBiW.png">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls208" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls208" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">即日も✿明るく澄んだ声、優しい声をお届けします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">音声・ナレーション</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">🌟先着5枠限定🌟
+【1000文字まで1000円、＋500文...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1000円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/b9jhZ32sj7Sr6TG9brQsv3py1papYPlc5vHA8YvFWoCrUIfcKH.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/sunao_eupho">
+                                          来海 純
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/sunao_eupho">
+                                          来海 純
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://mobile.twitter.com/sunao_eupho" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                              <a href="https://youtube.com/channel/UCxKbxt0MC12sfoBnuNrhbWw" class="small align-top"><i class="fa fa-youtube mr-2 text-secondary"></i></a>
+                                                                                                                                          </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+  </div>
+
+<div class="text-center">
+  <a href="https://tsunagu.cloud/products/search?category_id=13&amp;sort=2">
+                  Webサイト制作
+              の閲覧数の多い商品をもっと見る
+  </a>
+</div>            </div>
+                  <div class="mb-5">
+              <div class="row justify-content-center">
+  
+  <h4 class="m-4 text-center font-weight-bold">
+      【画像・映像・動画編集】
+  </h4>
+</div>
+<div class="row d-flex flex-nowrap overflow-auto">
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/453"></a>
+  <div>
+                  
+          <div id="carouselExampleControls453" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/fwsfYNuPnpUVw1bAoNRZBkyj3DLvg9ex55vXq3YTkl2RVcOX6B.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/GZHzzlYZxSf9aOr1po9JoPiuBjwdaJhVu1T12I4HlvwcDo3yHJ.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/FARYysNdrmWZah9XSHDY3u0hiaGfAQgHdNZ6vvFU5sUQc56uTf.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/YRFELTRJi6MiEB9OaEJqKDQNqR7dbzoVYTxD5Sxx1AvRlErkq8.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/sV6zjg2e7JcBH7uJjRMopclWJpewDQX2ttNfE7MKSHbUOVfwKj.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/2vJ5T6mhmqCIEEvO2gYo7q3WtXPLTq2WEq7O57VcWW3cebWyhb.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/LsFJYiWs1yCKAzRK7FBZ9of1JcRfGklkYydSZHaT6X2GiNw9zT.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/XHtY3oibZd8HKiS6Z902ubisamjVqAlnVAb6sfXfcpe5huGlZT.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls453" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls453" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">かわいくきれいにYouTube動画編集致します！</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">画像・映像・動画編集</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">【美容系、vlog、料理、ペットなどのYouTube動画の編...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">3000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/dQvgURRo39Y2azfGnwMEVV7d4Fk1lLgyjRBY1kr2UmsY2p07j3.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/URC_create">
+                                          URC_create
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/URC_create">
+                                          URC_create
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                                                              <a href="https://www.youtube.com/channel/UCA2XphgPgz8u403LzTBYsGQ" class="small align-top"><i class="fa fa-youtube mr-2 text-secondary"></i></a>
+                                                                                                                                          </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/383"></a>
+  <div>
+                  
+          <div id="carouselExampleControls383" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/GqhtYX9DmBrgubg04wnXyCRijTqXqs4TgXpCE9DFZHvRsEeAeo.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/PI39GA2ayokMZMfw9wo6BG71yNHbPkBBeQjkDYG2WyIR1OjP5C.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/gUIXkmcVslS4qOm9HiWyvVzxCIrnGVZFNoSnq5KM7yxoFjEv2o.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/xNX8qNTnGLfdV23ocYIXmsDXE0WY487hdA7k61hdHygfo5dnOh.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/hWIaWJRJH4xcMsWxho0h3pboM8cXk6DttvjrVKuB4QaZF06ROn.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls383" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls383" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">photoshopで画像加工・レタッチします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">画像・映像・動画編集</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">アクセスいただきありがとうございます。
+画像加工、レタッチ...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/TO068ayOnF7WIA2tIpldevLgOlk3xru4EdW62sO2TQ0q0CHJRL.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/photoshop">
+                                          鈴木秀武
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/photoshop">
+                                          鈴木秀武
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/waveaflag" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/947"></a>
+  <div>
+                  
+          <div id="carouselExampleControls947" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item active image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/1P0IFljE4P57KJSge9MqbyQFOhfP57p0nGKGZ3cnaHnpjWJzQm.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls947" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls947" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">歌ってみた動画・オリジナル曲のMV作ります</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">画像・映像・動画編集</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">映像クリエイターをしております。香菜と申します。
+本業は実...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">30000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/uTTZkxQ9gQPqgRh7jrOoJYycaaZqFIuGuyXaNsva9DiVQ948Xp.png">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/ichigomiuku">
+                                          《香菜》は動画を作っ...
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/ichigomiuku">
+                                          《香菜》は動画を作っています
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/itigo_miuku" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/724"></a>
+  <div>
+                  
+          <div id="carouselExampleControls724" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item active image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/MLth77V6JZkGJHAXytd0OR9iOl4XcY1L7efdtGHMoZhk57UyH2.png">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls724" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls724" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">YouTube動画編集</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">画像・映像・動画編集</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">YouTube動画編集を承ります。
+5分以内の動画であれば...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">2000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/1396284789288706052_60a9da87250a9.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/Jumpon">
+                                          Jumpon@動画編...
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/Jumpon">
+                                          Jumpon@動画編集者
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/JumponEditor?s=06" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+  </div>
+
+<div class="text-center">
+  <a href="https://tsunagu.cloud/products/search?category_id=4&amp;sort=2">
+                  画像・動画編集
+              の閲覧数の多い商品をもっと見る
+  </a>
+</div>            </div>
+                  <div class="mb-5">
+              <div class="row justify-content-center">
+  
+  <h4 class="m-4 text-center font-weight-bold">
+      【Webサイト制作】
+  </h4>
+</div>
+<div class="row d-flex flex-nowrap overflow-auto">
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/495"></a>
+  <div>
+                  
+          <div id="carouselExampleControls495" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/0uXCSJv0YhE2A8hxPIJzUfwE67pwgbPY2Dc5zrNcAwjIE8vvZI.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/DTO3i5tky0haVeJHwj2W24We6dTCMnCleQPk7cJ7Al6eCfGdRJ.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Cbv9obuVDQFkCDsmR0h7zrbjCWR3dVm4BeqpLt4ARMfFSgV7FB.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Qvr0ywwNqqj9eQXWz6YllFOEeRdDPK5hXR6EMwr7xz1VI3sggm.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls495" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls495" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">【期間限定割引中】あなたのWebサイトを制作いたします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">Webサイト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">個人様の趣味のサイト、事業サイト、企業様のPRサイトなど、あ...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">20000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/vY6HfJDO2aPNbMFnpWDUkfV7Xddz4KaRh04IbFj775P6Q54H0E.png">
+                                                          </div>
+                      </div>
+                                                  <div class="col text-left pl-0 pt-1 small mb-2">
+                              <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/yukinomayo">
+                                  雪乃麻代
+                              </a>
+                              <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/yukinomayo">
+                                  雪乃麻代
+                              </a>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/504"></a>
+  <div>
+                  
+          <div id="carouselExampleControls504" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/5vJm0SgoRuMeWMZN88zP47vwAVTbwAa1HKPNx7QVmVT0ttUXYr.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/FyLOJVRcuWlheCeDbdprlWa2UOcGSlSCSf2puZCR8dFyHkFevi.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/EbxwAwyLwWo9FpdZ2VK7Mir3RhNQfKFd3iQYl4J9cn7aL1l281.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/oZ0fA6R9W5RFVdsSV7lKKYdOE6PxS6T05aRQqxIBuINPTFv7mN.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/EXhmg4nfRQcB96TZnTZimdte9oE860gdMHCnygHiEyytd8Pypo.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/fbqZdONmtUBwX2hyt0UiOFCPfeWsQKguLDkhzbahakbbLZ3txH.png">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/hB2z6hagQ6UCfYdgrVGVZcYbefWN1lNM8LSZTdsmHU7gdZUW5C.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls504" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls504" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">WordPressのカスタマイズ・修正・相談</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">Webサイト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">【※重要】
+購入前に依頼相談のメッセージお願いします。
+...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/R249Vr8glArd8jUYlvxNlBRmChJ50OJybTuhZfJZvexRYXTeCK.png">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/tsuchida">
+                                          つちだろい | We...
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/tsuchida">
+                                          つちだろい | Webエンジニア
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/sororikaku" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/101"></a>
+  <div>
+                  
+          <div id="carouselExampleControls101" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item active image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/EtgJUbDLfP4nXOATfmYyHQeF7e1dN7wHatbAUvZrNmGn1oPnK2.png">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls101" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls101" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">WordPress案件のお手伝いします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">Webサイト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">当出品ページをご覧いただきありがとうございます！
+「 Wo...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">3000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/EbgjDSWsO0yZU5AiT6jdRHZO2Wg4AHjdWjKkWJ7RwmtKofihdW.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/yamo_work">
+                                          YAMO.WORK
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/yamo_work">
+                                          YAMO.WORK
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/yamo_work" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+          <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+          <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/658"></a>
+  <div>
+                  
+          <div id="carouselExampleControls658" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item active image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/2dKvtT2ckitnIyaxyWsP2VvfugyTfhI8EVID47B3YjlnKA9yEv.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls658" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls658" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">ホームページ５ページ分作成します！</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">Webサイト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">ご閲覧、ありがとうございます。
+HTML、CSS、Java...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">50000円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>0件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/moCOy3S4BA8OoBdx7xnMxWuniKwB5DiWgKno8OAwfEOuX1tdz3.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="col text-left pl-0 pt-1 small mb-2">
+                              <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/nakayama">
+                                  nakayama
+                              </a>
+                              <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/nakayama">
+                                  nakayama
+                              </a>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+      </div>
+  </div>
+
+<div class="text-center">
+  <a href="https://tsunagu.cloud/products/search?category_id=5&amp;sort=2">
+                  Webサイト制作
+              の閲覧数の多い商品をもっと見る
+  </a>
+</div>            </div>
+          </div>
+</div>
+
+<div class="bg-sky p-section p-home__job_requests" id="job_requests">
+  <div class="container">
+      <div class="title mb-4">
+          <h2 class="mb-0">
+              <img class="" src="https://tsunagu.cloud/img/common/title_new_job_requests.svg" alt="新着の仕事依頼">
+          </h2>
+          <a href="https://tsunagu.cloud/job_requests">新着の仕事依頼をもっと見る</a>
+      </div>
+      <div class="row d-flex flex-nowrap overflow-auto">
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="mb-3 p-job_request w-100">
+          <a class="block-link" href="https://tsunagu.cloud/job_requests/106"></a>
+      <div class="text">
+      
+      <span class="badge bg-light mb-2 pt-1">イラスト制作</span>
+      <h5 class="title">IRIAMの立ち絵</h5>
+      <p class="content">ヨークシャテリアの擬人化した女性かチワワの擬人化した女性のイ...</p>
+      <div class="body mb-3">
+          <table>
+              <tbody>
+                  <tr>
+                      <th><span>予算</span></th>
+                      <td>10000円ほど</td>
+                  </tr>
+                  <tr>
+                      <th><span>提案数</span></th>
+                      <td>1</td>
+                  </tr>
+                  <tr>
+                      <th><span>募集期限</span></th>
+                      <td>募集終了<br>2021-09-02</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+                                  <div class="d-flex align-items-center">
+                  <div class="p-profile pr-2">
+                      <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                          <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/107066689811775870495_612cb125b1239.jpg">
+                                                  </div>
+                  </div>
+                                          <div class="col text-left pl-0 pt-1 small mb-2">
+                          <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/sappy2831">
+                              紗那
+                          </a>
+                          <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/sappy2831">
+                              紗那
+                          </a>
+                      </div>
+                                  </div>
+                      </div>
+</div>            </div>
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="mb-3 p-job_request w-100">
+          <a class="block-link" href="https://tsunagu.cloud/job_requests/105"></a>
+      <div class="text">
+      
+      <span class="badge bg-light mb-2 pt-1">記事・ライティング</span>
+      <h5 class="title">【3000文字/4500円】任意整理についての記事作成</h5>
+      <p class="content">キーワード「任意整理　方法」でSEO対策をした記事作成をお願...</p>
+      <div class="body mb-3">
+          <table>
+              <tbody>
+                  <tr>
+                      <th><span>予算</span></th>
+                      <td>4500円ほど</td>
+                  </tr>
+                  <tr>
+                      <th><span>提案数</span></th>
+                      <td>4</td>
+                  </tr>
+                  <tr>
+                      <th><span>募集期限</span></th>
+                      <td>募集終了<br>2021-08-31</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+                                  <div class="d-flex align-items-center">
+                  <div class="p-profile pr-2">
+                      <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                          <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/MRcd9ariIw2tvzNLn9Jy3wMm3GcHnRvzRIAkgiM4yH3rBuDwub.jpg">
+                                                  </div>
+                  </div>
+                                          <div class="row">
+                          <div class="col-12">
+                              <div class="small">
+                                  <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/tamatomosan">
+                                      たまとも💻ライター
+                                  </a>
+                                  <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/tamatomosan">
+                                      たまとも💻ライター
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              
+                                                                  <a href="https://twitter.com/tamatomosan/" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                  <a href="https://www.instagram.com/tamatomosan/" class="small align-top"><i class="fa fa-instagram mr-2 text-secondary"></i></a>
+                                                                                          </div>
+                      </div>
+                                  </div>
+                      </div>
+</div>            </div>
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="mb-3 p-job_request w-100">
+          <a class="block-link" href="https://tsunagu.cloud/job_requests/101"></a>
+      <div class="text">
+      
+      <span class="badge bg-light mb-2 pt-1">記事・ライティング</span>
+      <h5 class="title">仮想通貨の教育用サイトの記事コンテンツ作成</h5>
+      <p class="content">仮想通貨の教育用サイトの記事コンテンツ作成
+
+本文1,6...</p>
+      <div class="body mb-3">
+          <table>
+              <tbody>
+                  <tr>
+                      <th><span>予算</span></th>
+                      <td>3000円ほど</td>
+                  </tr>
+                  <tr>
+                      <th><span>提案数</span></th>
+                      <td>1</td>
+                  </tr>
+                  <tr>
+                      <th><span>募集期限</span></th>
+                      <td>募集終了<br>2021-08-22</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+                                  <div class="d-flex align-items-center">
+                  <div class="p-profile pr-2">
+                      <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                          <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/116411537717218738066_60f69063b9e8e.jpg">
+                                                  </div>
+                  </div>
+                                          <div class="col text-left pl-0 pt-1 small mb-2">
+                          <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/tama1226">
+                              たま
+                          </a>
+                          <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/tama1226">
+                              たま
+                          </a>
+                      </div>
+                                  </div>
+                      </div>
+</div>            </div>
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="mb-3 p-job_request w-100">
+          <a class="block-link" href="https://tsunagu.cloud/job_requests/97"></a>
+      <div class="text">
+      
+      <span class="badge bg-light mb-2 pt-1">記事・ライティング</span>
+      <h5 class="title">ゲームアプリレビュー記事作成</h5>
+      <p class="content">ご覧いただきありがとうございます。
+
+本案件は、ゲームア...</p>
+      <div class="body mb-3">
+          <table>
+              <tbody>
+                  <tr>
+                      <th><span>予算</span></th>
+                      <td>2200円ほど</td>
+                  </tr>
+                  <tr>
+                      <th><span>提案数</span></th>
+                      <td>2</td>
+                  </tr>
+                  <tr>
+                      <th><span>募集期限</span></th>
+                      <td>募集終了<br>2021-08-20</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+                                  <div class="d-flex align-items-center">
+                  <div class="p-profile pr-2">
+                      <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                          <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/1164734480071847936_60a75eb09cbf0.jpg">
+                                                  </div>
+                  </div>
+                                          <div class="row">
+                          <div class="col-12">
+                              <div class="small">
+                                  <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/endo104">
+                                      遠藤
+                                  </a>
+                                  <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/endo104">
+                                      遠藤
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              
+                                                                  <a href="https://twitter.com/mon_game8" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                          </div>
+                      </div>
+                                  </div>
+                      </div>
+</div>            </div>
+                  </div>
+      <div class="bottom">
+          <a href="https://tsunagu.cloud/job_requests">新着の仕事依頼をもっと見る</a>
+      </div>
+  </div>
+</div>
+
+<div class="p-section p-home__products" id="products">
+  <div class="container">
+      <div class="title mb-4">
+          <h2 class="mb-0">
+              <img class="" src="https://tsunagu.cloud/img/common/title_new_products.svg" alt="新着の商品">
+          </h2>
+          <a href="https://tsunagu.cloud/products">新着の商品をもっと見る</a>
+      </div>
+      <div class="row d-flex flex-nowrap overflow-auto">
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/1217"></a>
+  <div>
+                  
+          <div id="carouselExampleControls1217" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/I7ln2nUHfYb5Ctd92skeJ86G73OEgldQNOIVx3fq4VUe2c0VpN.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Q7lmWaGyX7EhYuxm8uLXStm8AfJAzG2cEpdOvx7vUru6Qf86Lj.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/e12okScNPzmjtjt3iO3Ytg2ZfNhoKMBGPQP3D7sNEXOS1ak34B.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls1217" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls1217" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">スマホ対応！WEBサイトのコーディングをいたします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">Webサイト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">★　WEBサイトのコーディングなら、お任せください！　★
+...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">10000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/2wjc1KcEfEd8kB1uA9r6N9OlOcMR0AxN20XQafcfLLXWbcm35H.png">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/coder_ao">
+                                          あお＠コーダー
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/coder_ao">
+                                          あお＠コーダー
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/coder_ao" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+          </div>
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/1216"></a>
+  <div>
+                  
+          <div id="carouselExampleControls1216" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/fSjY5l8CoDzdCO51X25nQFkA9dOInqYigYjyxdaTsHzTFu2UJJ.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/u7SEeVzrEgikEIERCmoIAEJvXyw2VUD2Okm6R6sBFrNFGpUSiv.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/5ZMxmG9p48ywaD80wgI2CMUNUxSJVhHi7vWeEqGach461imCii.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Lhou7y9mwGMopTIhMcoktb8z97NyqGjKUShTJtDPjHvF8pp0n4.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls1216" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls1216" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">用途に沿ったイラストを制作致します</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">イラスト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">観覧ありがとうございます。
+ご希望の用途に沿ったイラストを...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">5000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/vLZmbgtXEUTF5p3J6xwsxVUrxJMphtHKTMxYrrBIjkQpUYRD1z.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/kunugiko">
+                                          橡こりす
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/kunugiko">
+                                          橡こりす
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/korisu_1214" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+          </div>
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/1215"></a>
+  <div>
+                  
+          <div id="carouselExampleControls1215" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item active image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/Ps9vMQ2PZcqcqAYHvnofu8Fk8d9SBLDd0k03cO9liY5angvMcq.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls1215" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls1215" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">伝わる落ち着いたナレーションをお届けします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">音声・ナレーション</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">ご覧いただき、ありがとうございます。
+アメリカ在住の宅録ナ...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">1500円</h4>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/ulpiuAfdQGRRwUs0mdd5XZdz9iaMkZsBNTLIRdaqtfp6ie9wYW.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/match_narrator">
+                                          match
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/match_narrator">
+                                          match
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                                                                                                  <a href="https://www.instagram.com/match__narrator/" class="small align-top"><i class="fa fa-instagram mr-2 text-secondary"></i></a>
+                                                                                                      </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+          </div>
+                      <div class="col-10 col-xl-3 col-sm-4 mb-2 d-flex">
+              <div class="p-product w-100"> 
+  <a class="block-link" href="https://tsunagu.cloud/products/1214"></a>
+  <div>
+                  
+          <div id="carouselExampleControls1214" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                                                                      
+                          <div class="carousel-item image c-ofi c-ofi--all">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/ioUCWO4EVTV6QdbfQjXX4EgSGZseqrk4cyAlJZSfWrjTYl4BZJ.jpg">
+                          </div>
+                                                                                              <div class="carousel-item image c-ofi c-ofi--all active">
+                              <img class="d-block w-100" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/product_images/mKj9ttrFhfAzWJMBpgaBKjwEh4J0rcLxCQeyBPT3NMfjHttkAj.jpg">
+                          </div>
+                                                          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls1214" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls1214" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      
+      <div class="text">
+          
+
+          
+          <h5 class="title border-0 mb-2">オーダーメイド漫画制作いたします</h5>
+
+                                  <p class="badge bg-light mr-3 mt-1 h5">イラスト制作</p>
+                          <!-- <span class="">星（評価）が入る（11）</span> -->
+          <p class="content">漫画の制作を承ります！
+オリジナル小説のコミカライズ、Co...</p>
+          <div class="d-flex align-items-center">
+              <h4 class="d-inline-block mr-2 mb-0">3000円</h4>
+                                  <span class="badge badge-light mr-1">要相談</span>
+                                          </div>
+              <span class="badge bg-light mr-2">販売実績</span>件
+              <div class="d-flex align-items-center ml-1">
+                                          <i class="fa fa-star-o mr-1"></i>
+                                      <p class="mb-0 mr-1">0</p>
+                  <p class="mb-0">(0)</p>
+              </div>
+                                  <div class="d-flex align-items-center">
+                      <div class="p-profile pr-2">
+                          <div class="avatar avatar--cardSize c-ofi ml-0 mb-2">
+                                                                  <img class="w-100 img-fluid" src="https://prod-tsunagu.s3.ap-northeast-1.amazonaws.com/public/icon/105506704009932610698_612d71e350374.jpg">
+                                                          </div>
+                      </div>
+                                                  <div class="row">
+                              <div class="col-12">
+                                  <div class="small">
+                                      <a class="small text-secondary d-none d-sm-inline-block" href="https://tsunagu.cloud/users/riot">
+                                          松本カズト
+                                      </a>
+                                      <a class="small text-secondary d-inline-block d-sm-none" href="https://tsunagu.cloud/users/riot">
+                                          松本カズト
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col">
+                                  
+                                                                          <a href="https://twitter.com/kzt_mtmt" class="small align-top"><i class="fa fa-twitter mr-2 text-secondary"></i></a>
+                                                                                                                                                                              </div>
+                          </div>
+                                          </div>
+                      </div>
+  </div>
+</div>
+          </div>
+                  </div>
+      <div class="bottom">
+          <a href="https://tsunagu.cloud/products">新着の商品をもっと見る</a>
+      </div>
+  </div>
+</div>
+
+<div class="p-section p-home__news" id="news">
+  <div class="container">
+      <div class="title mb-4">
+          <h3 class="mbf-0 text-center font-weight-bold">運営からのお知らせ</h3>
+          <a href="https://tsunagu.cloud/news">運営からのお知らせをもっと見る</a>
+      </div>
+      <ul class="list-group list-group-flush">
+                          <li class="list-group-item p-0">
+                  <a href="https://tsunagu.cloud/news/4" class="text-secondary btn btn-block px-0 py-2 text-left d-flex align-items-center">
+                      <p class="mr-4 mb-0">2021/06/11</p>
+                      <p class="mb-0">取引終了方法の変更</p>
+                  </a>
+              </li>
+                          <li class="list-group-item p-0">
+                  <a href="https://tsunagu.cloud/news/1" class="text-secondary btn btn-block px-0 py-2 text-left d-flex align-items-center">
+                      <p class="mr-4 mb-0">2021/05/19</p>
+                      <p class="mb-0">今後のアップデート予定</p>
+                  </a>
+              </li>
+                  </ul>
+      <div class="bottom">
+          <a href="https://tsunagu.cloud/news">運営からのお知らせをもっと見る</a>
+      </div>
+  </div>
+</div>
+<div class="bg-primary p-section p-home__deco p-home__merit" id="merit">
+  <div class="container">
+      <h2 class="text-center">
+          <img class="" src="https://tsunagu.cloud/img/common/title_merit.svg" alt="つなぐのメリット">
+      </h2>
+      <div class="">
+          <div class="block first">
+              <h4 class="sub_title">
+                  <img class="img-fluid" src="https://tsunagu.cloud/img/common/title_merit_1.svg" alt="業界一の低仲介手数料">
+              </h4>
+              <div class="row">
+                  <div class="inner col-12 col-md-4">
+                      <div class="text">
+                          <p>
+                              クラウドソーシングの利用の際、必要となる仲介手数料。つなぐでは他社を圧倒する低手数料にすることで利用者の負担を軽減し、誰もが気軽に利用できる環境を提供します。<br>
+                              手数料は販売価格の<span>5.<small>5％</small></span><small>（税込）</small>であり、クリエイター(販売者)の報酬から差し引かれます。
+                              クライアント(依頼者)は<b class="h5 strong">手数料不要</b>となります。
+                          </p>
+                      </div>
+                  </div>
+                  <div class="sub col-12 col-md-8">
+                      <div class="sub__inner bg-cream">
+                          <h5 class="sub_title--secondary text-center">
+                              <img class="img-fluid" src="https://tsunagu.cloud/img/common/title_pre_3_1_2.svg" alt="仲介手数料他社との比較">
+                          </h5>
+                          <div class="row justify-content-between">
+                              <div class="col">
+                                  <img class="img-fluid" src="https://tsunagu.cloud/img/common/pre_hikaku_01.png?v=2" alt="仲介手数料他社との比較">
+                              </div>
+                              <div class="col">
+                                  <img class="img-fluid" src="https://tsunagu.cloud/img/common/pre_hikaku_02.png?v=2" alt="仲介手数料他社との比較">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row d-block d-sm-flex mb-5 align-items-stretch">
+          <div class=" col-12 col-md-6">
+              <div class="block">
+                  <h4 class="sub_title">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/common/title_merit_2.svg" alt="豊富な決済方法">
+                  </h4>
+                  <div class="inner">
+                      <div class="icon">
+                          <img class="img-fluid" src="https://tsunagu.cloud/img/icon/payment.svg" alt="豊富な決済方法">
+                      </div>
+                      <div class="text">
+                          <p>
+                             個人間で売買を行うと、支払い方法が制限され、特に購入者（クライアント）側は不便に感じます。全ての人がストレスなく購入できるように、クレジットカード払い・銀行振込・コンビニ決済に対応しています。<br>
+                             <small>※現在のところ、クレジットカード、デビットカード、国際カードブランド付き、プリペイドカードの利用が可能。その他の決済方法に関しては順次対応予定。</small>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class=" col-12 col-md-6">
+              <div class="block">
+                  <h4 class="sub_title">
+                      <img class="img-fluid" src="https://tsunagu.cloud/img/common/title_merit_3.svg" alt="次の仕事につながる機能">
+                  </h4>
+                  <div class="inner">
+                      <div class="icon">
+                          <img class="img-fluid" src="https://tsunagu.cloud/img/icon/glow.svg" alt="次の仕事につながる機能">
+                      </div>
+                      <div class="text">
+                          <p>
+                              初心者クリエイターが実績をつくれるコンテンツやＳＮＳによる集客のお手伝いをすることで、クリエイターとして活動することに不安を感じる方のサポートを行います。
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="text-center last">
+          <a href="https://tsunagu.cloud/how_to">
+              <img class="img-fluid" src="https://tsunagu.cloud/img/common/button_to_functions.svg" alt="その他にも機能がたくさん">
+          </a>
+      </div>
+  </div>
+</div>
+<style>
+main {
+  padding-top: 140px;
+}
+@media (max-width: 767.98px) {
+  main {
+      padding-top: 80px;
+  }
+}
+</style>
+      </main>
+      <footer class="">
+  <div class="p-footer__bottom">
+<ul>
+  <li><a href="https://tsunagu.cloud/terms-of-service">利用規約</a></li>
+  <li><a href="https://tsunagu.cloud/privacy-policy">プライバシーポリシー</a></li>
+  <li><a href="https://tsunagu.cloud/tokushou">特定商取引法に基づく表記</a></li>
+  <li><a href="https://tsunagu.cloud/questions">よくある質問</a></li>
+  <li><a href="https://tsunagu.cloud/how_to">簡単な使い方</a></li>
+  <li><a href="https://tsunagu.cloud/contact/create">お問い合わせ</a></li>
+  <li><a href="https://twitter.com/tsunagu_cloud">公式ツイッター</a></li>
+  <li>パートナー企業： <a href="https://minna-systems.co.jp/" target="_blank">株式会社みんなシステムズ</a>　/　<a href="https://itachi.co.jp/" target="_blank">株式会社イタチ</a></li>
+</ul>
+<div>©2021 tsunagu</div>
+</div>
+</footer>    </div>
+      <script>
+      $(function() {
+          $('#notificationButton').on('click', function() {
+              $.ajax({
+                  type: 'GET',
+                  url: '/notification/clear/' + null,
+              })
+          })
+      })
+  </script>
+
+
+</body></html>
